@@ -5,20 +5,20 @@ For Those About to Rock... Fire!
 ## Release 0.5 - 20/10/2012 - Welcome h5bp 4.01!
 
 1. fix *basics_img_caption_shortcode()* since changes in the *img_caption_shortcode* function in WordPress 3.4. **[functions-filter-action.php]**
-1. Rename scripts.js into main.js **[functions-filter-action.php]**
-1. Update path to new version of vendor js's **[functions-filter-action.php]**
-1. Updade version number to ?v=0.5 **[header.php]**
-1. Update normalize v1.0.1 (h5bp 4.01) **[normalize.css]**
-1. Add *css/main.css* (h5bp v. 4.01) in */css/main.css*
-1. turn *css/tool.css* into wp-h5bp.css to gather both wordpress's specific classes and h5bp's helper classes
-1. Remove *markup.css*
-1. Remove *css/grid-bootstrap.css*, *css/grid-fluid.css*, *css/grid-fixed.css*
-1. Remove *css/grid.png*
-1. Remove *js/libs/dd_belatedpng.js*
-1. Update /js to match the js folder from h5bp 
-1. Update path to new version of vendor js's **[header.php]**
-1. Update style.css to reflect changes **[style.css]**
-1. Add an empty *editor-style.css* just in case you need it
+2. Rename scripts.js into main.js **[functions-filter-action.php]**
+3. Update path to new version of vendor js's **[functions-filter-action.php]**
+4. Updade version number to ?v=0.5 **[header.php]**
+5. Update normalize v1.0.1 (h5bp 4.01) **[normalize.css]**
+6. Add *css/main.css* (h5bp v. 4.01) in */css/main.css*
+7. turn *css/tool.css* into wp-h5bp.css to gather both wordpress's specific classes and h5bp's helper classes
+8. Remove *markup.css*
+9. Remove *css/grid-bootstrap.css*, *css/grid-fluid.css*, *css/grid-fixed.css*
+10. Remove *css/grid.png*
+11. Remove *js/libs/dd_belatedpng.js*
+12. Update /js to match the js folder from h5bp 
+13. Update path to new version of vendor js's **[header.php]**
+14. Update style.css to reflect changes **[style.css]**
+15. Add an empty *editor-style.css* just in case you need it
 
 ## Release 0.3.3 - 26/05/2012
 
