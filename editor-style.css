@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Add callback for custom TinyMCE editor stylesheets.
+   ========================================================================== */
+
+/**
+ * Set the Width of WYSIWYG Editor. 
+ * Should match the width of your main content. 
+ * Think about `$content_width = 580` in functions.php 
+ */
+#tinymce.wp-editor { 
+	/* max-width: 580px; */ 
+}

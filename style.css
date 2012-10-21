@@ -1,0 +1,39 @@
+/*
+Theme Name: Basics
+Theme URI: http://basics.4design.tl
+Author: Bruno Bichet
+Author URI: http://plus.tl/bruno
+Description: A Blank Theme based on HTML5 Boilerplate « For Those About To Rock » with WordPress.
+Version: 0.5
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-background, custom-menu, editor-style, microformats, translation-ready, sticky-post, threaded-comments, fixed-width
+This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
+For Those About to Rock. Fire!
+*/
+
+/**
+ * 	Import HTML5 Boilerplate normalize.css
+ */
+@import "css/normalize.css"; 
+
+/**
+ * 	Import HTML5 Boilerplate main.css (1rst part of main.css)
+ */
+@import "css/main.css";
+
+/**
+ * Import author.css. 
+ * Fill the section "Author's custom styles" to specify your own dress-code.
+ * You may consider using a child theme instead
+ */
+/* @import "css/author.css"; */
+
+/*
+ * Import wp-h5bp.css
+ * 1. Specific classes from the core of WordPress or the generated code from Basics
+ * 2. Helper classes from h5bp (2nd part of main.css)
+ */
+@import "css/wp-h5bp.css";
+
+/* We Salute You */
