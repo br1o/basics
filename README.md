@@ -1,0 +1,4 @@
+Basics
+======
+
+My WordPress Theme
