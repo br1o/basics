@@ -1,0 +1,137 @@
+/*
+@version 0.5
+@since Version 0.5
+For Those About to Rock. Fire!
+*/
+
+/**
+ * wordpress.css
+ * Specific classes from the core of WordPress or the generated code from Basics
+ */
+
+/* ==========================================================================
+   WordPress classes 
+   ========================================================================== */
+
+/**
+ * Posts 
+ */
+.sticky {  }
+.bypostauthor {  }
+
+/**
+ * Text alignment 
+ */
+.left { 
+	text-align: left; 
+}
+.right { 
+	text-align: right; 
+}
+.center { 
+	text-align: center; 
+}
+.justify { 
+	text-align: justify; 
+}
+
+/** 
+ * WordPress Medias
+ * Resize images to fit the main content area.
+ * - Applies only to images uploaded via WordPress by targeting size-* classes.
+ * - Other images will be left alone. Use "size-auto" class to apply to other images.
+ */
+
+/** 
+ * Generic classes
+ */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	margin: 1.5em 0;
+}
+.alignnone {
+	float: none;
+	margin: 1.5em;
+}
+
+/** 
+ * Specific medias
+ */
+img.size-auto, 
+img.size-full, 
+img.size-large, 
+img.size-medium, 
+.attachment img, 
+.widget-area img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+figure.thumb-small {
+	float: left;
+	margin-right: 1.5em;
+}
+figure.thumb-medium {  }
+figure.thumb-large {  }
+
+img.attachment-thumbnail {  }
+img.attachment-medium {  }
+img.attachment-large {  }
+
+img.alignleft, 
+figure.alignleft {
+	float: left;
+	margin: 1.5em 1.5em 1.5em 0;
+}
+img.alignright, 
+figure.alignright {
+	float: right;
+	margin: 1.5em 0 1.5em 1.5em;
+}
+img.aligncenter, 
+figure.aligncenter, 
+p.attachment img {
+	display: block;
+	margin: 1.5em auto;
+}
+img.alignnone {
+	display: inline;
+	margin: .5em;
+}
+figure.alignnone {
+	display: block;
+	margin: .5em;
+}
+figcaption, 
+.wp-caption, 
+.wp-caption-text, 
+.gallery-caption { 
+	padding: .5em 0;
+	font-style: italic;
+	font-size: .85em;
+}
+.gallery-item dd {
+	margin-bottom: 0;
+}
+.wp-smiley { 
+	margin: 0; 
+}
+
+/**
+ * Alignment for the logo "WordPress je thème" in the footer. 
+ * Keep it safe if possible ;-) 
+ */
+#wpjt {
+    display: inline-block; 
+    vertical-align: middle;
+}

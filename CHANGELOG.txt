@@ -2,6 +2,13 @@
 
 For Those About to Rock... Fire!
 
+## Release 0.5 - 22/10/2012
+
+1. Split wp-h5bp.css into: wordpress.css and main2.css
+2. Rename main.css into main1.css
+3. Change version number 0.5 -> 0.5.1 **[style.css]** **[header.php]**
+4. Add import wordpress.css and change names of css files **[style.css]**
+
 ## Release 0.5 - 20/10/2012 - Welcome h5bp 4.01!
 
 1. fix *basics_img_caption_shortcode()* since changes in the *img_caption_shortcode* function in WordPress 3.4. **[functions-filter-action.php]**
