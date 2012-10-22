@@ -10,27 +10,27 @@ For Those About to Rock. Fire!
 
 /*
 TOC:
-remove_filter()					Remove <p> in category or tag description
-basics_page_menu_args()			Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
-basics_excerpt_length()			Sets the post excerpt length to 52 characters.
-basics_continue_reading_link()	Returns a "Continue Reading" link for excerpts
-basics_auto_excerpt_more()		Replaces "[...]" with an ellipsis and basics_continue_reading_link().
-basics_custom_excerpt_more()	Adds a pretty "Continue Reading" link to custom post excerpts.
-basics_widgets_init()			Register widgetized area and update sidebar with default widgets
-basics_body_class()				Add custom body classes
-basics_img_caption_shortcode()	The Caption shortcode with figure and figcaption.
-basics_change_mce_options()		Add support for iframe element in wysiwyg editor
-basics_jquery()					Load jQuery in footer
-basics_scripts()				Load other Javascripts in footer
-posts_link_rel_next()			Print rel "next" microformats attributes on navivagation links between posts
-posts_link_rel_prev()			Print rel "prev" microformats attributes on navivagation links between posts
-remove_more_jump_link()			Remove link Jumps to the More tag or Top of Page
-basics_search_autofocus()		Print autofocus attribute to search form when is_search() 
-basics_searchform()				Display Search Form
+1. remove_filter()					Remove <p> in category or tag description
+2. basics_page_menu_args()			Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
+3. basics_excerpt_length()			Sets the post excerpt length to 52 characters.
+4. basics_continue_reading_link()	Returns a "Continue Reading" link for excerpts
+5. basics_auto_excerpt_more()		Replaces "[...]" with an ellipsis and basics_continue_reading_link().
+6. basics_custom_excerpt_more()		Adds a pretty "Continue Reading" link to custom post excerpts.
+7. basics_widgets_init()			Register widgetized area and update sidebar with default widgets
+8. basics_body_class()				Add custom body classes
+9. basics_img_caption_shortcode()	The Caption shortcode with figure and figcaption.
+10. basics_change_mce_options()		Add support for iframe element in wysiwyg editor
+11. basics_jquery()					Load jQuery in footer
+12. basics_scripts()				Load other Javascripts in footer
+13. posts_link_rel_next()			Print rel "next" microformats attributes on navivagation links between posts
+14. posts_link_rel_prev()			Print rel "prev" microformats attributes on navivagation links between posts
+15. remove_more_jump_link()			Remove link Jumps to the More tag or Top of Page
+16. basics_search_autofocus()		Print autofocus attribute to search form when is_search() 
+17. basics_searchform()				Display Search Form
 */
 
 /**
- * Disable the wpautop function so that WordPress makes no attempt to correct your markup.
+ * 1. Disable the wpautop function so that WordPress makes no attempt to correct your markup.
  * http://nicolasgallagher.com/using-html5-elements-in-wordpress-post-content/
  */
 //remove_filter('the_excerpt', 'wpautop');
@@ -40,7 +40,7 @@ basics_searchform()				Display Search Form
 remove_filter('term_description','wpautop');
  
 /**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
+ * 2. Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
 add_filter( 'wp_page_menu_args', 'basics_page_menu_args' );
 if ( ! function_exists( 'basics_page_menu_args' ) ) :
@@ -51,7 +51,7 @@ function basics_page_menu_args($args) {
 endif;
 	
 /**
- * Sets the post excerpt length to 52 characters.
+ * 3. Sets the post excerpt length to 52 characters.
  */
 add_filter( 'excerpt_length', 'basics_excerpt_length' );
 if ( ! function_exists( 'basics_excerpt_length' ) ) :
@@ -61,7 +61,7 @@ function basics_excerpt_length( $length ) {
 endif;
 
 /**
- * Returns a "Continue Reading" link for excerpts
+ * 4. Returns a "Continue Reading" link for excerpts
  */
 if ( ! function_exists( 'basics_continue_reading_link' ) ) :
 function basics_continue_reading_link() {
@@ -70,7 +70,7 @@ function basics_continue_reading_link() {
 endif;
 
 /**
- * Replaces "[...]" (appended to automatically generated excerpts) 
+ * 5. Replaces "[...]" (appended to automatically generated excerpts) 
  * with an ellipsis and basics_continue_reading_link().
  */
 add_filter( 'excerpt_more', 'basics_auto_excerpt_more' );
@@ -81,7 +81,7 @@ function basics_auto_excerpt_more( $more ) {
 endif;
 
 /**
- * Adds a pretty "Continue Reading" link to custom post excerpts.
+ * 6. Adds a pretty "Continue Reading" link to custom post excerpts.
  */
 add_filter( 'get_the_excerpt', 'basics_custom_excerpt_more' );
 if ( ! function_exists( 'basics_custom_excerpt_more' ) ) :
@@ -94,7 +94,7 @@ function basics_custom_excerpt_more( $output ) {
 endif;
 
 /**
- * Register widgetized area and update sidebar with default widgets
+ * 7. Register widgetized area and update sidebar with default widgets
  */
 add_action( 'widgets_init', 'basics_widgets_init' );
 if ( ! function_exists( 'basics_widgets_init' ) ) :
@@ -202,7 +202,7 @@ function basics_widgets_init() {
 endif;
 
 /**
- * Add custom body classes
+ * 8. Add custom body classes
  */
 add_filter( 'body_class', 'basics_body_class' );
 if ( ! function_exists( 'basics_body_class' ) ) :
@@ -214,7 +214,7 @@ function basics_body_class($classes) {
 endif;
 
 /**
- * The Caption shortcode with figure and figcaption
+ * 9. The Caption shortcode with figure and figcaption
  * fix based on http://wordpress.org/support/topic/caption-broken-in-new-34-posts
  * Thanks @regisrob
  */
@@ -245,7 +245,7 @@ function basics_caption_shortcode_filter( $val, $attr, $content = null ) {
 endif;
 
 /**
- * Add support for iframe element in wysiwyg editor 
+ * 10. Add support for iframe element in wysiwyg editor 
  * http://wpengineer.com/1963/customize-wordpress-wysiwyg-editor/
  */
 add_filter('tiny_mce_before_init', 'basics_change_mce_options');
@@ -266,7 +266,7 @@ function basics_change_mce_options( $initArray ) {
 endif;
 
 /**
- * Load jQuery in footer
+ * 11. Load jQuery in footer
  */
 add_action('wp_enqueue_scripts', 'basics_jquery');
 if ( ! function_exists( 'basics_jquery' ) ):	
@@ -280,7 +280,7 @@ function basics_jquery() {
 endif;
 
 /**
- * Load other Javascripts in footer
+ * 12. Load other Javascripts in footer
  */
 add_action('wp_footer', 'basics_scripts');
 if ( ! function_exists( 'basics_scripts' ) ):	
@@ -298,7 +298,7 @@ See functions.php file in Beyond Basics to load scripts from the Child theme
 endif;
 
 /**
- * Print rel "next" microformats attributes on navivagation links between posts.
+ * 13. Print rel "next" microformats attributes on navivagation links between posts.
  */ 
 add_filter('next_posts_link_attributes', 'posts_link_rel_next');
 if ( ! function_exists( 'posts_link_rel_next' ) ) :
@@ -308,7 +308,7 @@ function posts_link_rel_next(){
 endif;
 
 /**
- * Print rel "prev" microformats attributes on navivagation links between posts.
+ * 14. Print rel "prev" microformats attributes on navivagation links between posts.
  */ 
 add_filter('previous_posts_link_attributes', 'posts_link_rel_prev');
 if ( ! function_exists( 'posts_link_rel_prev' ) ) :
@@ -318,7 +318,7 @@ function posts_link_rel_prev(){
 endif;
 
 /**
- * Remove link Jumps to the More tag or Top of Page
+ * 15. Remove link Jumps to the More tag or Top of Page
  */ 
 add_filter('the_content_more_link', 'remove_more_jump_link');
 if ( ! function_exists( 'remove_more_jump_link' ) ) :
@@ -335,7 +335,7 @@ function remove_more_jump_link( $link ) {
 endif;
 
 /**
- * Print autofocus attribute to search form when is_search()
+ * 16. Print autofocus attribute to search form when is_search()
  * Kudos @jubianchi [http://www.jubianchi.fr]
  */
 if ( ! function_exists( 'basics_search_autofocus' ) ):	
@@ -348,7 +348,7 @@ function basics_search_autofocus() {
 endif;
 
 /**
- * Display Search Form
+ * 17. Display Search Form
  * Kudos @jubianchi [http://www.jubianchi.fr]
  */
 add_filter( 'get_search_form', 'basics_searchform' );
