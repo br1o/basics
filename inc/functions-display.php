@@ -10,19 +10,19 @@ For Those About to Rock. Fire!
 
 /*
 TOC:
-basics_content_nav()		Display navigation to next/previous pages when applicable.
-basics_title()				Print the <title> tag based on what is being viewed.
-basics_description()		Print the <meta description> of the web page regarding the context
-basics_section_heading()	Return the section heading (title and description) regarding the context.
-basics_posted_on()			Print the post meta in the post's header
-basics_posted_in()			Print the post meta in the post's footer
-basics_favicons()			Print Meta tags for favicon
-basics_extra_head()			Print extra meta tags into <head>
-basics_i_love_wordpress()	Print WordPress icon to the footer
+1. basics_content_nav() 		Display navigation to next/previous pages when applicable.
+2. basics_title() 				Print the <title> tag based on what is being viewed.
+3. basics_description()			Print the <meta description> of the web page regarding the context
+4. basics_section_heading()		Return the section heading (title and description) regarding the context.
+5. basics_posted_on()			Print the post meta in the post's header
+6. basics_posted_in()			Print the post meta in the post's footer
+7. basics_favicons()			Print Meta tags for favicon
+8. basics_extra_head()			Print extra meta tags into <head>
+9. basics_i_love_wordpress()	Print WordPress icon to the footer
 */
 
 /**
- * Display navigation to next/previous pages when applicable.
+ * 1. Display navigation to next/previous pages when applicable.
  */ 
 if ( ! function_exists( 'basics_content_nav' ) ) :
 function basics_content_nav($nav_id, $nav_class) {
@@ -38,7 +38,7 @@ function basics_content_nav($nav_id, $nav_class) {
 endif;
 
 /**
- * Print the <title> tag based on what is being viewed.
+ * 2. Print the <title> tag based on what is being viewed.
  */
 if ( ! function_exists( 'basics_title' ) ) :
 function basics_title() {
@@ -53,7 +53,7 @@ function basics_title() {
 endif;
 
 /**
- * Print the <meta description> of the web page regarding the context
+ * 3. Print the <meta description> of the web page regarding the context
  */
 if ( ! function_exists( 'basics_description' ) ) :
 function basics_description() {
@@ -82,7 +82,7 @@ function basics_description() {
 endif;
 
 /**
- * Return the section heading (title and description) regarding the context.
+ * 4. Return the section heading (title and description) regarding the context.
  */
 if ( ! function_exists( 'basics_section_heading' ) ) :
 function basics_section_heading() {
@@ -158,7 +158,7 @@ function basics_section_heading() {
 endif;
 
 /**
- * Print the post meta in the post's header
+ * 5. Print the post meta in the post's header
  */
 if ( ! function_exists( 'basics_posted_on' ) ) :
 function basics_posted_on() {
@@ -181,7 +181,7 @@ function basics_posted_on() {
 endif;
 
 /**
- * Print the post meta in the post's footer
+ * 6. Print the post meta in the post's footer
  */
 if ( ! function_exists( 'basics_posted_in' ) ) :
 function basics_posted_in() {
@@ -213,8 +213,7 @@ function basics_posted_in() {
 endif;
 
 /**
- * Print Meta tags for favicon
- * 
+ * 7. Print Meta tags for favicon
  * Note : instead you can place favicon.ico and apple-touch-icon.png in the root directory
  * In this case, don't forget to remove basics_favicons() in header.php
  */
@@ -230,10 +229,9 @@ function basics_favicons() {
 endif;
 
 /**
- * Print extra meta tags into <head>
+ * 8. Print extra meta tags into <head>
  * Signup on Google Webmaster Tools : https://www.google.com/webmasters/tools/
  * Signup on Alexa : http://www.alexa.com/siteowners/claim
- *
  * Don't forget to fill the "content" attributes, 
  * or duplicate this function in your Child theme functions.php file
  */
@@ -248,7 +246,7 @@ function basics_extra_head() {
 endif;
 
 /**
- * Print WordPress icon to the footer
+ * 9. Print WordPress icon to the footer
  */
 if ( ! function_exists( 'basics_i_love_wordpress' ) ):	
 function basics_i_love_wordpress() {
