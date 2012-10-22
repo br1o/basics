@@ -3,7 +3,7 @@
 @package WordPress
 @subpackage Basics
 @author Bruno Bichet <bruno.bichet@gmail.com>
-@version 0.5
+@version 0.5.1
 @since Version 0.1
 @todo Check the markup http://validator.w3.org/
 For Those About to Rock. Fire!
