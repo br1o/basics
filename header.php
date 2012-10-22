@@ -34,9 +34,8 @@ For Those About to Rock. Fire!
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-		chromium.org/developers/how-tos/chrome-frame-getting-started -->
-	<!--[if lt IE 7]><p class=chromeframe><?php _e( 'Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.', 'basics' ); ?></p><![endif]-->
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe><?php _e( 'Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.', 'basics' ); ?></p><![endif]-->
 <div id="page" class="container hfeed" role="document">
 	<div id="banner">
 		<header role="banner">
