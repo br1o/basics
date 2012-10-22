@@ -9,8 +9,8 @@ The humans responsible & colophon
 Blank theme for WordPress site developpment:
 
 Standards 			HTML5, CSS3, Microformats, WAI-ARIA Landmarks,
-Components 			Modernizr, jQuery, dd_belatedpng, 
-Software 			Notepad++
+Components 			Modernizr, jQuery, 
+Software 			Notepad++, Aptana Studio 3
  
 /**
  * WHO
