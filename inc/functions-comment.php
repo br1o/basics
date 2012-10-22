@@ -3,7 +3,7 @@
 @package WordPress
 @subpackage Basics
 @author Bruno Bichet <bruno.bichet@gmail.com>
-@version 0.2.8
+@version 0.5
 @since Version 0.2.7
 For Those About to Rock. Fire!
 */

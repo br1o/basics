@@ -3,15 +3,15 @@
 @package WordPress
 @subpackage Basics
 @author Bruno Bichet <bruno.bichet@gmail.com>
-@version 0.2.8
+@version 0.5
 @since Version 0.2.7
 For Those About to Rock. Fire!
 */
 
 /*
 TOC:
-basics_setup() 	
-Sets up theme defaults and registers support for various WordPress features :
+1. basics_setup() 	
+Sets up theme defaults and registers support for various WordPress features:
 - $content_width
 - load_theme_textdomain
 - register_nav_menus
@@ -23,11 +23,12 @@ Sets up theme defaults and registers support for various WordPress features :
 */
  
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * 1. Sets up theme defaults and registers support for various WordPress features.
  */
 add_action( 'after_setup_theme', 'basics_setup' );
 if ( ! function_exists( 'basics_setup' ) ):	
 function basics_setup() {
+	
 	/**
 	 * Set the content width based on the theme's design and stylesheet.
 	 */
