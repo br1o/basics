@@ -10,12 +10,12 @@ For Those About to Rock. Fire!
 
 /*
 TOC:
-basics_comments()	Template for comments and pingbacks. Callback used by wp_list_comments() for displaying the comments.
-basics_respond()	Customise the comments fields with HTML5 form elements
+1. basics_comments() Template for comments and pingbacks. Callback used by wp_list_comments() for displaying the comments.
+2. basics_respond()	Customise the comments fields with HTML5 form elements
 */
  
 /**
- * Template for comments and pingbacks.
+ * 1. Template for comments and pingbacks.
  * Used as a callback by wp_list_comments() for displaying the comments.
  */
 if ( ! function_exists( 'basics_comments' ) ) :
@@ -69,7 +69,7 @@ function basics_comments( $comment, $args, $depth ) {
 endif; // ends check for basics_comments()
 
 /**
- * Customise the comments fields with HTML5 form elements
+ * 2. Customise the comments fields with HTML5 form elements
  */
 add_filter('comment_form_defaults', 'basics_respond');
 if ( ! function_exists( 'basics_respond' ) ) :
