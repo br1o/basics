@@ -19,6 +19,7 @@ For Those About to Rock... Fire!
 13. Update path to new version of vendor js's **[header.php]**
 14. Update style.css to reflect changes **[style.css]**
 15. Add an empty *editor-style.css* just in case you need it
+16. Tweak some comments for legibility purposes in many files
 
 ## Release 0.3.3 - 26/05/2012
 
