@@ -2,7 +2,7 @@
 
 For Those About to Rock... Fire!
 
-## Release 0.5 - 22/10/2012
+## Release 0.5.1 - 22/10/2012
 
 1. Split wp-h5bp.css into: wordpress.css and main2.css
 2. Rename main.css into main1.css
