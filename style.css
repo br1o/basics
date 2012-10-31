@@ -4,7 +4,7 @@ Theme URI: http://basics.4design.tl
 Author: Bruno Bichet
 Author URI: http://plus.tl/bruno
 Description: A Blank Theme based on HTML5 Boilerplate « For Those About To Rock » with WordPress.
-Version: 0.5.1
+Version: 0.5.2
 License: GNU General Public License
 License URI: license.txt
 Tags: custom-background, custom-menu, editor-style, microformats, translation-ready, sticky-post, threaded-comments, fixed-width
@@ -18,7 +18,8 @@ For Those About to Rock. Fire!
 @import "css/normalize.css"; 
 
 /**
- * Import HTML5 Boilerplate main1.css (1rst part of h5bp's main.css).
+ * Import HTML5 Boilerplate main1.css 
+ * (1rst part of h5bp's main.css).
  */
 @import "css/main1.css";
 
@@ -36,9 +37,10 @@ For Those About to Rock. Fire!
  */
 /* @import "css/wordpress.css"; */
 
-/*
+/**
  * Import main2.css
- * Helper classes from h5bp (2nd part of h5bp's main.css).
+ * Helper classes from h5bp 
+ * (2nd part of h5bp's main.css).
  */
 @import "css/main2.css";
 

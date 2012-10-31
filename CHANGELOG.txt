@@ -2,6 +2,11 @@
 
 For Those About to Rock... Fire!
 
+## Release 0.5.2 - 31/10/2012
+
+1. Tweak comments **[style.css]**
+2. Change version number **[header.php]**
+
 ## Release 0.5.1 - 22/10/2012
 
 1. Split wp-h5bp.css into: wordpress.css and main2.css
