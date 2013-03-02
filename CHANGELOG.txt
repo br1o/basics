@@ -2,6 +2,13 @@
 
 For Those About to Rock... Fire!
 
+## Release 0.5.3 - 02/03/2013
+
+1. Update css/main1.css and css/main2.css to h5bp v4.1.0
+2. Update css/normalize.css to v1.1.0
+3. Update js/plugins.js to v4.1.0
+4. Update js/vendor/jquery.js to jquery v1.9.1
+
 ## Release 0.5.2 - 31/10/2012
 
 1. Tweak comments **[style.css]**

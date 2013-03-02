@@ -3,7 +3,7 @@
 @package WordPress
 @subpackage Basics
 @author Bruno Bichet <bruno.bichet@gmail.com>
-@version 0.5.2
+@version 0.5.3
 @since Version 0.1
 @todo Check the markup http://validator.w3.org/
 For Those About to Rock. Fire!
@@ -24,7 +24,7 @@ For Those About to Rock. Fire!
 	<meta name="author" content="<?php the_author_meta( 'display_name', 1 ); ?>" />
 	<meta name="viewport" content="width=device-width" />
 	<?php echo basics_favicons(); /* Print Meta tags for favicons. See inc/functions-display.php for details */ ?>
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?v=0.5.2" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?v=0.5.3" />
 	<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="alternate" type="application/rss+xml" title="<?php printf( __( 'Subscribe to %1$s via RSS', 'basics' ), get_bloginfo( 'name' ) ); ?>" href="<?php echo home_url( '/feed/' ); ?>" />
